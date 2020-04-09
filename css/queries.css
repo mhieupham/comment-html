@@ -1,0 +1,40 @@
+/*
+*
+*			Media Queries for Responsive Web Design - basic 
+*/
+
+/* Big tablet - 1024px - 1200px
+*****************************************/
+
+@media only screen and (max-width: 1200px) {
+    
+}
+
+/* Tablets - 768px - 1023px
+*****************************************/
+
+@media only screen and (max-width: 1023px) {
+
+}
+@media (max-width: 1199px) and (min-width: 768px){
+
+}
+
+
+/* Small phones/ tablets - 481px - 767px
+*****************************************/
+
+@media only screen and (max-width: 767px) {
+    
+}
+/* Small phones - Less than or equal to 480px
+*********************************************/
+
+@media only screen and (max-width: 480px) {
+    .comment-area{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+}
