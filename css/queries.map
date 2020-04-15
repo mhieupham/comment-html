@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "queries.css",
+	"sources": [
+		"../scss/queries.scss"
+	],
+	"sourcesContent": [
+		"/*\r\n*\r\n*\t\t\tMedia Queries for Responsive Web Design - basic \r\n*/\r\n\r\n/* Big tablet - 1024px - 1200px\r\n*****************************************/\r\n\r\n@media only screen and (max-width: 1200px) {\r\n    \r\n}\r\n\r\n/* Tablets - 768px - 1023px\r\n*****************************************/\r\n\r\n@media only screen and (max-width: 1023px) {\r\n\r\n}\r\n@media (max-width: 1199px) and (min-width: 768px){\r\n\r\n}\r\n\r\n\r\n/* Small phones/ tablets - 481px - 767px\r\n*****************************************/\r\n\r\n@media only screen and (max-width: 767px) {\r\n    \r\n}\r\n/* Small phones - Less than or equal to 480px\r\n*********************************************/\r\n\r\n@media only screen and (max-width: 480px) {\r\n    .comment-area{\r\n        -webkit-box-orient: vertical;\r\n        -webkit-box-direction: normal;\r\n        -ms-flex-direction: column;\r\n        flex-direction: column;\r\n    }\r\n}"
+	],
+	"names": [],
+	"mappings": "AAAA;;;EAGE;AAEF;0CAC0C;AAM1C;0CAC0C;AAU1C;0CAC0C;AAK1C;8CAC8C;AAE9C,MAAM,MAAM,MAAM,MAAM,SAAS,EAAE,KAAK;;EACpC,AAAA,aAAa,CAAA;IACT,kBAAkB,EAAE,QAAQ;IAC5B,qBAAqB,EAAE,MAAM;IAC7B,kBAAkB,EAAE,MAAM;IAC1B,cAAc,EAAE,MAAM;GACzB"
+}

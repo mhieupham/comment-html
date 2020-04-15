@@ -1,9 +1,33 @@
+//@font-face {
+//    font-family: Geomanist;
+//    src:url('../FontsFree-Net-Geomanist-Regular.ttf') format('truetype');
+//    font-weight: normal;
+//    font-style: normal;
+//}
+$redColor : #d92e2e;
+
+@font-face {
+    font-family: 'geomanist';
+    src: url('../font/geomanist-regular-webfont.eot');
+    src: url('../font/geomanist-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/geomanist-regular-webfont.woff2') format('woff2'),
+         url('../font/geomanist-regular-webfont.woff') format('woff'),
+         url('../font/geomanist-regular-webfont.ttf') format('truetype'),
+         url('../font/geomanist-regular-webfont.svg#geomanistregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 html{
     font-family: sans-serif;
+}
+body{
+    font-family: 'geomanist';
 }
 #testimonial{
     margin-top: 80px;
     margin-bottom: 40px;
+    padding: 0 10px;
     .testimonial-intro{
         display: flex;
         flex-direction: column;
@@ -19,21 +43,31 @@ html{
             }
         }
         .testimonial-main{
+            div{
+                
+            }
             .testimonial-featured{
+                padding: 15px 0;
                 h4{
                     font-size: 18px;
                     margin-bottom: 5px;
                     text-transform: uppercase;
                     text-align: center;
+                    margin-top: 0;
+                    color: #333;
                 }
                 p{
-                    margin-top: 5px ;
-                    font-weight: 400;
+                    margin-top: 5px;
+                    font-weight: 300;
                     color: #777;
                     text-align: center;
+                    line-height: 24px;
+                    font-size: 15px;
+                    letter-spacing: 1.0px;
                 }
             }
             .testimonial-total-rating{
+                padding: 15px 0;
                 .testimonial-box{
                     width: 265px;
                     height: 163px;
@@ -60,10 +94,24 @@ html{
                             margin: 0;
                         }
                         .star-rating{
+                            height: 29px;
+                            overflow: hidden;
+                            position: relative;
+                            line-height: 1.618;
+                            font-size: 1em;
+                            font-family: star;
+                            font-weight: 400;
+                            span{
+                                font-size: 26px;
+                                letter-spacing: 4px;
+                            }
                             .checked{
-                                color:red;
+                                color:$redColor;
                             }
                         }
+                    }
+                    .testimonial-total-number{
+                        margin: 4px 0;
                     }
                 }
                 .testimonial-box::before{
@@ -89,13 +137,18 @@ html{
                 .testimonial-total-review{
                     align-items: center;
                     text-align: center;
-                    margin-top: 25px;
+                    margin-top: 32px;
+                    font-weight: 400;
+                    font-size: 15px;
                 }
                 
             }
             .testimonial-percent{
+                
+                padding: 15px 0;
                 text-align: center;
                 h4{
+                    margin-top: 0;
                     font-size: 34px;
                     margin-bottom: 5px;
                     font-weight: 700;
@@ -113,15 +166,19 @@ html{
         position: relative;
         text-align: center;
         .button-danger{
+            font-size: 16px;
             text-transform: uppercase;
             text-decoration: none;
-            background-color: red;
+            background-color: #d92e2e;
             color:#fff;
-            padding: 16px 30px;
+            padding: 14px 32px;
             text-align: center;
             position: relative;
             display: inline-block;
             z-index: 5;
+            letter-spacing: .6px;
+            font-weight: 900;
+            border-radius: 2px;
         }
     }
     .testimonial-footer::before{
@@ -149,54 +206,105 @@ html{
     }
     .comment-area{
         display: flex;
-        padding: 10px 0;
+        padding-bottom: 15px;
+        padding-top: 10px;
         border-bottom: 1px solid #ccc;
+        margin-top: 25px;
         .comment-author-info{
+            padding: 15px 0;
+            .star-rating{
+                height: 26px;
+            }
             time{
+                height: 25px;
+                font-size: 15px;
                 opacity: 0.3;
+                display: block;
+                margin-bottom: 10px;
+            }
+            .comment-author{
+                margin: 0;
+                height: 19px;
+                i{
+                    font-size: 21px;
+                    color:#929292;
+                    margin-left: 10px;
+                }
             }
         }
         .comment-main{
+            padding: 15px 0;
+            width: 365px;
+            height: 232px;
             .comment-header{
-                h3{
+                h4{
                     margin-top: 0;
+                    margin-bottom: 10px;
+                    font-size: 19px;
+                }
+            }
+            .comment-text{
+                p{
+                    font-size: 15px;
+                    line-height: 25px;
+                    letter-spacing: 0.4px;
                 }
             }
             .comment-aftertext{
+                margin-top: 25px;
+                height: 103px;
                 .comment-attrachment{
+                    height: 68px;
                     .comment-attrach-images{
                         a{
                             img{
-                                width: 50px;
+                                width: auto;
+                                height: 60px;
                             }
                         }
                     }
                     
                 }
                 .comment-recomment{
+                    margin-top: 5px;
+                    font-size: 15px;
+                    letter-spacing: 0.4px;
                     i{
-                        color: red;
+                        color: $redColor;
                     }
                 }
             }
         }
         .comment-extra{
+            padding: 15px 0;
+            width: 300px;
+            height: 75px;
             ul{
+                font-size: 15px;
                 padding: 0;
+                margin: 0;
+                letter-spacing: 0.4px;
                 li{
+                    height: 25px;
                     display: flex;
                     list-style: none;
                     flex-direction: row;
                     justify-content: flex-end;
+                    width: 310px;
+                    align-items: center;
                     .label{
                         flex: 0 0 50%;
                     }
                     .bullet{
                         flex: 0 0 30%;
+                        font-size: 11px;
+                        text-align: center;
+                        letter-spacing: 3px;
                     }
                     .rate{
                         opacity: 0.3;
                         flex: 0 0 20%;
+                        text-align: center;
                     }
                 }
             }
@@ -235,13 +343,14 @@ html{
     }
 }
 .star-rating{
+    font-size: 25px;
     .checked{
-        color:red;
+        color:$redColor;
     }
 }
 .bullet{
     .checked{
-        color:red;
+        color:$redColor;
     }
 }
 .image-modal{

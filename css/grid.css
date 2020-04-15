@@ -1,691 +1,801 @@
-
 /*  SECTIONS  ============================================================================= */
-
+/* line 4, ../../TESTIMONIALS/scss/grid.scss */
 .section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
+  clear: both;
+  padding: 0px;
+  margin: 0px;
 }
 
 /*  GROUPING  ============================================================================= */
-
+/* line 12, ../../TESTIMONIALS/scss/grid.scss */
 .row {
-    zoom: 1; /* For IE 6/7 (trigger hasLayout) */
-    max-width: 1140px;
-    margin: 0 auto;
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+  max-width: 1140px;
+  margin: 0 auto;
 }
 
+/* line 18, ../../TESTIMONIALS/scss/grid.scss */
 .row:before,
 .row:after {
-    content:"";
-    display:table;
+  content: "";
+  display: table;
 }
+
+/* line 23, ../../TESTIMONIALS/scss/grid.scss */
 .row:after {
-    clear:both;
+  clear: both;
 }
 
 /*  GRID COLUMN SETUP   ==================================================================== */
-
+/* line 29, ../../TESTIMONIALS/scss/grid.scss */
 .col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
+  display: block;
+  float: left;
+  margin: 1% 0 1% 1.6%;
 }
 
-.col:first-child { margin-left: 0; } /* all browsers except IE6 and lower */
+/* line 35, ../../TESTIMONIALS/scss/grid.scss */
+.col:first-child {
+  margin-left: 0;
+}
 
-
+/* all browsers except IE6 and lower */
 /*  REMOVE MARGINS AS ALL GO FULL WIDTH AT 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
-	.col { 
-		/*margin: 1% 0 1% 0%;*/
-        margin: 0;
-	}
+  /* line 41, ../../TESTIMONIALS/scss/grid.scss */
+  .col {
+    /*margin: 1% 0 1% 0%;*/
+    margin: 0;
+  }
 }
-
 
 /*  GRID OF TWO   ============================================================================= */
-
-
+/* line 51, ../../TESTIMONIALS/scss/grid.scss */
 .span-2-of-2 {
-	width: 100%;
+  width: 100%;
 }
 
+/* line 55, ../../TESTIMONIALS/scss/grid.scss */
 .span-1-of-2 {
-	width: 49.2%;
+  width: 49.2%;
 }
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
-	.span-2-of-2 {
-		width: 100%; 
-	}
-	.span-1-of-2 {
-		width: 100%; 
-	}
+  /* line 62, ../../TESTIMONIALS/scss/grid.scss */
+  .span-2-of-2 {
+    width: 100%;
+  }
+  /* line 65, ../../TESTIMONIALS/scss/grid.scss */
+  .span-1-of-2 {
+    width: 100%;
+  }
 }
-
 
 /*  GRID OF THREE   ============================================================================= */
-
-	
+/* line 74, ../../TESTIMONIALS/scss/grid.scss */
 .span-3-of-3 {
-	width: 100%; 
+  width: 100%;
 }
 
+/* line 78, ../../TESTIMONIALS/scss/grid.scss */
 .span-2-of-3 {
-	width: 66.13%; 
+  width: 66.13%;
 }
 
+/* line 82, ../../TESTIMONIALS/scss/grid.scss */
 .span-1-of-3 {
-	width: 32.26%; 
+  width: 32.26%;
 }
-
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
-	.span-3-of-3 {
-		width: 100%; 
-	}
-	.span-2-of-3 {
-		width: 100%; 
-	}
-	.span-1-of-3 {
-		width: 100%;
-	}
+  /* line 90, ../../TESTIMONIALS/scss/grid.scss */
+  .span-3-of-3 {
+    width: 100%;
+  }
+  /* line 93, ../../TESTIMONIALS/scss/grid.scss */
+  .span-2-of-3 {
+    width: 100%;
+  }
+  /* line 96, ../../TESTIMONIALS/scss/grid.scss */
+  .span-1-of-3 {
+    width: 100%;
+  }
 }
 
 /*  GRID OF FOUR   ============================================================================= */
-
-	
+/* line 104, ../../TESTIMONIALS/scss/grid.scss */
 .span-4-of-4 {
-	width: 100%; 
+  width: 100%;
 }
 
+/* line 108, ../../TESTIMONIALS/scss/grid.scss */
 .span-3-of-4 {
-	width: 74.6%; 
+  width: 74.6%;
 }
 
+/* line 112, ../../TESTIMONIALS/scss/grid.scss */
 .span-2-of-4 {
-	width: 49.2%; 
+  width: 49.2%;
 }
 
+/* line 116, ../../TESTIMONIALS/scss/grid.scss */
 .span-1-of-4 {
-	width: 23.8%; 
+  width: 23.8%;
 }
-
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
-	.span-4-of-4 {
-		width: 100%; 
-	}
-	.span-3-of-4 {
-		width: 100%; 
-	}
-	.span-2-of-4 {
-		width: 100%; 
-	}
-	.span-1-of-4 {
-		width: 100%; 
-	}
+  /* line 124, ../../TESTIMONIALS/scss/grid.scss */
+  .span-4-of-4 {
+    width: 100%;
+  }
+  /* line 127, ../../TESTIMONIALS/scss/grid.scss */
+  .span-3-of-4 {
+    width: 100%;
+  }
+  /* line 130, ../../TESTIMONIALS/scss/grid.scss */
+  .span-2-of-4 {
+    width: 100%;
+  }
+  /* line 133, ../../TESTIMONIALS/scss/grid.scss */
+  .span-1-of-4 {
+    width: 100%;
+  }
 }
-
 
 /*  GRID OF FIVE   ============================================================================= */
-
-	
+/* line 142, ../../TESTIMONIALS/scss/grid.scss */
 .span-5-of-5 {
-	width: 100%;
+  width: 100%;
 }
 
+/* line 146, ../../TESTIMONIALS/scss/grid.scss */
 .span-4-of-5 {
-  	width: 79.68%; 
+  width: 79.68%;
 }
 
+/* line 150, ../../TESTIMONIALS/scss/grid.scss */
 .span-3-of-5 {
-  	width: 59.36%; 
+  width: 59.36%;
 }
 
+/* line 154, ../../TESTIMONIALS/scss/grid.scss */
 .span-2-of-5 {
-  	width: 39.04%;
+  width: 39.04%;
 }
 
+/* line 158, ../../TESTIMONIALS/scss/grid.scss */
 .span-1-of-5 {
-  	width: 18.72%;
+  width: 18.72%;
 }
-
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
-	.span-5-of-5 {
-		width: 100%; 
-	}
-	.span-4-of-5 {
-		width: 100%; 
-	}
-	.span-3-of-5 {
-		width: 100%; 
-	}
-	.span-2-of-5 {
-		width: 100%; 
-	}
-	.span-1-of-5 {
-		width: 100%; 
-	}
+  /* line 166, ../../TESTIMONIALS/scss/grid.scss */
+  .span-5-of-5 {
+    width: 100%;
+  }
+  /* line 169, ../../TESTIMONIALS/scss/grid.scss */
+  .span-4-of-5 {
+    width: 100%;
+  }
+  /* line 172, ../../TESTIMONIALS/scss/grid.scss */
+  .span-3-of-5 {
+    width: 100%;
+  }
+  /* line 175, ../../TESTIMONIALS/scss/grid.scss */
+  .span-2-of-5 {
+    width: 100%;
+  }
+  /* line 178, ../../TESTIMONIALS/scss/grid.scss */
+  .span-1-of-5 {
+    width: 100%;
+  }
 }
-
 
 /*  GRID OF SIX   ============================================================================= */
-
-
+/* line 187, ../../TESTIMONIALS/scss/grid.scss */
 .span-6-of-6 {
-	width: 100%;
+  width: 100%;
 }
 
+/* line 191, ../../TESTIMONIALS/scss/grid.scss */
 .span-5-of-6 {
-  	width: 83.06%;
+  width: 83.06%;
 }
 
+/* line 195, ../../TESTIMONIALS/scss/grid.scss */
 .span-4-of-6 {
-  	width: 66.13%;
+  width: 66.13%;
 }
 
+/* line 199, ../../TESTIMONIALS/scss/grid.scss */
 .span-3-of-6 {
-  	width: 49.2%;
+  width: 49.2%;
 }
 
+/* line 203, ../../TESTIMONIALS/scss/grid.scss */
 .span-2-of-6 {
-  	width: 32.26%;
+  width: 32.26%;
 }
 
+/* line 207, ../../TESTIMONIALS/scss/grid.scss */
 .span-1-of-6 {
-  	width: 15.33%;
+  width: 15.33%;
 }
-
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
-	.span-6-of-6 {
-		width: 100%; 
-	}
-	.span-5-of-6 {
-		width: 100%; 
-	}
-	.span-4-of-6 {
-		width: 100%; 
-	}
-	.span-3-of-6 {
-		width: 100%; 
-	}
-	.span-2-of-6 {
-		width: 100%; 
-	}
-	.span-1-of-6 {
-		width: 100%; 
-	}
+  /* line 215, ../../TESTIMONIALS/scss/grid.scss */
+  .span-6-of-6 {
+    width: 100%;
+  }
+  /* line 218, ../../TESTIMONIALS/scss/grid.scss */
+  .span-5-of-6 {
+    width: 100%;
+  }
+  /* line 221, ../../TESTIMONIALS/scss/grid.scss */
+  .span-4-of-6 {
+    width: 100%;
+  }
+  /* line 224, ../../TESTIMONIALS/scss/grid.scss */
+  .span-3-of-6 {
+    width: 100%;
+  }
+  /* line 227, ../../TESTIMONIALS/scss/grid.scss */
+  .span-2-of-6 {
+    width: 100%;
+  }
+  /* line 230, ../../TESTIMONIALS/scss/grid.scss */
+  .span-1-of-6 {
+    width: 100%;
+  }
 }
-
-
 
 /*  GRID OF SEVEN   ============================================================================= */
-
-
+/* line 240, ../../TESTIMONIALS/scss/grid.scss */
 .span-7-of-7 {
-	width: 100%;
+  width: 100%;
 }
 
+/* line 244, ../../TESTIMONIALS/scss/grid.scss */
 .span-6-of-7 {
-	width: 85.48%;
+  width: 85.48%;
 }
 
+/* line 248, ../../TESTIMONIALS/scss/grid.scss */
 .span-5-of-7 {
-  	width: 70.97%;
+  width: 70.97%;
 }
 
+/* line 252, ../../TESTIMONIALS/scss/grid.scss */
 .span-4-of-7 {
-  	width: 56.45%;
+  width: 56.45%;
 }
 
+/* line 256, ../../TESTIMONIALS/scss/grid.scss */
 .span-3-of-7 {
-  	width: 41.94%;
+  width: 41.94%;
 }
 
+/* line 260, ../../TESTIMONIALS/scss/grid.scss */
 .span-2-of-7 {
-  	width: 27.42%;
+  width: 27.42%;
 }
 
+/* line 264, ../../TESTIMONIALS/scss/grid.scss */
 .span-1-of-7 {
-  	width: 12.91%;
+  width: 12.91%;
 }
-
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
-	.span-7-of-7 {
-		width: 100%; 
-	}
-	.span-6-of-7 {
-		width: 100%; 
-	}
-	.span-5-of-7 {
-		width: 100%; 
-	}
-	.span-4-of-7 {
-		width: 100%; 
-	}
-	.span-3-of-7 {
-		width: 100%; 
-	}
-	.span-2-of-7 {
-		width: 100%; 
-	}
-	.span-1-of-7 {
-		width: 100%; 
-	}
+  /* line 272, ../../TESTIMONIALS/scss/grid.scss */
+  .span-7-of-7 {
+    width: 100%;
+  }
+  /* line 275, ../../TESTIMONIALS/scss/grid.scss */
+  .span-6-of-7 {
+    width: 100%;
+  }
+  /* line 278, ../../TESTIMONIALS/scss/grid.scss */
+  .span-5-of-7 {
+    width: 100%;
+  }
+  /* line 281, ../../TESTIMONIALS/scss/grid.scss */
+  .span-4-of-7 {
+    width: 100%;
+  }
+  /* line 284, ../../TESTIMONIALS/scss/grid.scss */
+  .span-3-of-7 {
+    width: 100%;
+  }
+  /* line 287, ../../TESTIMONIALS/scss/grid.scss */
+  .span-2-of-7 {
+    width: 100%;
+  }
+  /* line 290, ../../TESTIMONIALS/scss/grid.scss */
+  .span-1-of-7 {
+    width: 100%;
+  }
 }
-
 
 /*  GRID OF EIGHT   ============================================================================= */
-
-	
+/* line 299, ../../TESTIMONIALS/scss/grid.scss */
 .span-8-of-8 {
-	width: 100%;
+  width: 100%;
 }
 
+/* line 303, ../../TESTIMONIALS/scss/grid.scss */
 .span-7-of-8 {
-	width: 87.3%; 
+  width: 87.3%;
 }
 
+/* line 307, ../../TESTIMONIALS/scss/grid.scss */
 .span-6-of-8 {
-	width: 74.6%; 
+  width: 74.6%;
 }
 
+/* line 311, ../../TESTIMONIALS/scss/grid.scss */
 .span-5-of-8 {
-	width: 61.9%; 
+  width: 61.9%;
 }
 
+/* line 315, ../../TESTIMONIALS/scss/grid.scss */
 .span-4-of-8 {
-	width: 49.2%; 
+  width: 49.2%;
 }
 
+/* line 319, ../../TESTIMONIALS/scss/grid.scss */
 .span-3-of-8 {
-	width: 36.5%;
+  width: 36.5%;
 }
 
+/* line 323, ../../TESTIMONIALS/scss/grid.scss */
 .span-2-of-8 {
-	width: 23.8%; 
+  width: 23.8%;
 }
 
+/* line 327, ../../TESTIMONIALS/scss/grid.scss */
 .span-1-of-8 {
-	width: 11.1%; 
+  width: 11.1%;
 }
-
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
-	.span-8-of-8 {
-		width: 100%; 
-	}
-	.span-7-of-8 {
-		width: 100%; 
-	}
-	.span-6-of-8 {
-		width: 100%; 
-	}
-	.span-5-of-8 {
-		width: 100%; 
-	}
-	.span-4-of-8 {
-		width: 100%; 
-	}
-	.span-3-of-8 {
-		width: 100%; 
-	}
-	.span-2-of-8 {
-		width: 100%; 
-	}
-	.span-1-of-8 {
-		width: 100%; 
-	}
+  /* line 335, ../../TESTIMONIALS/scss/grid.scss */
+  .span-8-of-8 {
+    width: 100%;
+  }
+  /* line 338, ../../TESTIMONIALS/scss/grid.scss */
+  .span-7-of-8 {
+    width: 100%;
+  }
+  /* line 341, ../../TESTIMONIALS/scss/grid.scss */
+  .span-6-of-8 {
+    width: 100%;
+  }
+  /* line 344, ../../TESTIMONIALS/scss/grid.scss */
+  .span-5-of-8 {
+    width: 100%;
+  }
+  /* line 347, ../../TESTIMONIALS/scss/grid.scss */
+  .span-4-of-8 {
+    width: 100%;
+  }
+  /* line 350, ../../TESTIMONIALS/scss/grid.scss */
+  .span-3-of-8 {
+    width: 100%;
+  }
+  /* line 353, ../../TESTIMONIALS/scss/grid.scss */
+  .span-2-of-8 {
+    width: 100%;
+  }
+  /* line 356, ../../TESTIMONIALS/scss/grid.scss */
+  .span-1-of-8 {
+    width: 100%;
+  }
 }
-
 
 /*  GRID OF NINE   ============================================================================= */
-
-
+/* line 365, ../../TESTIMONIALS/scss/grid.scss */
 .span-9-of-9 {
-	width: 100%;
+  width: 100%;
 }
 
+/* line 369, ../../TESTIMONIALS/scss/grid.scss */
 .span-8-of-9 {
-	width: 88.71%;
+  width: 88.71%;
 }
 
+/* line 373, ../../TESTIMONIALS/scss/grid.scss */
 .span-7-of-9 {
-	width: 77.42%; 
+  width: 77.42%;
 }
 
+/* line 377, ../../TESTIMONIALS/scss/grid.scss */
 .span-6-of-9 {
-	width: 66.13%; 
+  width: 66.13%;
 }
 
+/* line 381, ../../TESTIMONIALS/scss/grid.scss */
 .span-5-of-9 {
-	width: 54.84%; 
+  width: 54.84%;
 }
 
+/* line 385, ../../TESTIMONIALS/scss/grid.scss */
 .span-4-of-9 {
-	width: 43.55%; 
+  width: 43.55%;
 }
 
+/* line 389, ../../TESTIMONIALS/scss/grid.scss */
 .span-3-of-9 {
-	width: 32.26%;
+  width: 32.26%;
 }
 
+/* line 393, ../../TESTIMONIALS/scss/grid.scss */
 .span-2-of-9 {
-	width: 20.97%; 
+  width: 20.97%;
 }
 
+/* line 397, ../../TESTIMONIALS/scss/grid.scss */
 .span-1-of-9 {
-	width: 9.68%; 
+  width: 9.68%;
 }
-
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
-	.span-9-of-9 {
-		width: 100%; 
-	}
-	.span-8-of-9 {
-		width: 100%; 
-	}
-	.span-7-of-9 {
-		width: 100%; 
-	}
-	.span-6-of-9 {
-		width: 100%; 
-	}
-	.span-5-of-9 {
-		width: 100%; 
-	}
-	.span-4-of-9 {
-		width: 100%; 
-	}
-	.span-3-of-9 {
-		width: 100%; 
-	}
-	.span-2-of-9 {
-		width: 100%; 
-	}
-	.span-1-of-9 {
-		width: 100%; 
-	}
+  /* line 405, ../../TESTIMONIALS/scss/grid.scss */
+  .span-9-of-9 {
+    width: 100%;
+  }
+  /* line 408, ../../TESTIMONIALS/scss/grid.scss */
+  .span-8-of-9 {
+    width: 100%;
+  }
+  /* line 411, ../../TESTIMONIALS/scss/grid.scss */
+  .span-7-of-9 {
+    width: 100%;
+  }
+  /* line 414, ../../TESTIMONIALS/scss/grid.scss */
+  .span-6-of-9 {
+    width: 100%;
+  }
+  /* line 417, ../../TESTIMONIALS/scss/grid.scss */
+  .span-5-of-9 {
+    width: 100%;
+  }
+  /* line 420, ../../TESTIMONIALS/scss/grid.scss */
+  .span-4-of-9 {
+    width: 100%;
+  }
+  /* line 423, ../../TESTIMONIALS/scss/grid.scss */
+  .span-3-of-9 {
+    width: 100%;
+  }
+  /* line 426, ../../TESTIMONIALS/scss/grid.scss */
+  .span-2-of-9 {
+    width: 100%;
+  }
+  /* line 429, ../../TESTIMONIALS/scss/grid.scss */
+  .span-1-of-9 {
+    width: 100%;
+  }
 }
-
 
 /*  GRID OF TEN   ============================================================================= */
-
-
+/* line 438, ../../TESTIMONIALS/scss/grid.scss */
 .span-10-of-10 {
-	width: 100%;
+  width: 100%;
 }
 
+/* line 442, ../../TESTIMONIALS/scss/grid.scss */
 .span-9-of-10 {
-	width: 89.84%;
+  width: 89.84%;
 }
 
+/* line 446, ../../TESTIMONIALS/scss/grid.scss */
 .span-8-of-10 {
-	width: 79.68%;
+  width: 79.68%;
 }
 
+/* line 450, ../../TESTIMONIALS/scss/grid.scss */
 .span-7-of-10 {
-	width: 69.52%; 
+  width: 69.52%;
 }
 
+/* line 454, ../../TESTIMONIALS/scss/grid.scss */
 .span-6-of-10 {
-	width: 59.36%; 
+  width: 59.36%;
 }
 
+/* line 458, ../../TESTIMONIALS/scss/grid.scss */
 .span-5-of-10 {
-	width: 49.2%; 
+  width: 49.2%;
 }
 
+/* line 462, ../../TESTIMONIALS/scss/grid.scss */
 .span-4-of-10 {
-	width: 39.04%; 
+  width: 39.04%;
 }
 
+/* line 466, ../../TESTIMONIALS/scss/grid.scss */
 .span-3-of-10 {
-	width: 28.88%;
+  width: 28.88%;
 }
 
+/* line 470, ../../TESTIMONIALS/scss/grid.scss */
 .span-2-of-10 {
-	width: 18.72%; 
+  width: 18.72%;
 }
 
+/* line 474, ../../TESTIMONIALS/scss/grid.scss */
 .span-1-of-10 {
-	width: 8.56%; 
+  width: 8.56%;
 }
-
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
-	.span-10-of-10 {
-		width: 100%; 
-	}
-	.span-9-of-10 {
-		width: 100%; 
-	}
-	.span-8-of-10 {
-		width: 100%; 
-	}
-	.span-7-of-10 {
-		width: 100%; 
-	}
-	.span-6-of-10 {
-		width: 100%; 
-	}
-	.span-5-of-10 {
-		width: 100%; 
-	}
-	.span-4-of-10 {
-		width: 100%; 
-	}
-	.span-3-of-10 {
-		width: 100%; 
-	}
-	.span-2-of-10 {
-		width: 100%; 
-	}
-	.span-1-of-10 {
-		width: 100%; 
-	}
+  /* line 482, ../../TESTIMONIALS/scss/grid.scss */
+  .span-10-of-10 {
+    width: 100%;
+  }
+  /* line 485, ../../TESTIMONIALS/scss/grid.scss */
+  .span-9-of-10 {
+    width: 100%;
+  }
+  /* line 488, ../../TESTIMONIALS/scss/grid.scss */
+  .span-8-of-10 {
+    width: 100%;
+  }
+  /* line 491, ../../TESTIMONIALS/scss/grid.scss */
+  .span-7-of-10 {
+    width: 100%;
+  }
+  /* line 494, ../../TESTIMONIALS/scss/grid.scss */
+  .span-6-of-10 {
+    width: 100%;
+  }
+  /* line 497, ../../TESTIMONIALS/scss/grid.scss */
+  .span-5-of-10 {
+    width: 100%;
+  }
+  /* line 500, ../../TESTIMONIALS/scss/grid.scss */
+  .span-4-of-10 {
+    width: 100%;
+  }
+  /* line 503, ../../TESTIMONIALS/scss/grid.scss */
+  .span-3-of-10 {
+    width: 100%;
+  }
+  /* line 506, ../../TESTIMONIALS/scss/grid.scss */
+  .span-2-of-10 {
+    width: 100%;
+  }
+  /* line 509, ../../TESTIMONIALS/scss/grid.scss */
+  .span-1-of-10 {
+    width: 100%;
+  }
 }
-
 
 /*  GRID OF ELEVEN   ============================================================================= */
-
+/* line 517, ../../TESTIMONIALS/scss/grid.scss */
 .span-11-of-11 {
-	width: 100%;
+  width: 100%;
 }
 
+/* line 521, ../../TESTIMONIALS/scss/grid.scss */
 .span-10-of-11 {
-	width: 90.76%;
+  width: 90.76%;
 }
 
+/* line 525, ../../TESTIMONIALS/scss/grid.scss */
 .span-9-of-11 {
-	width: 81.52%;
+  width: 81.52%;
 }
 
+/* line 529, ../../TESTIMONIALS/scss/grid.scss */
 .span-8-of-11 {
-	width: 72.29%;
+  width: 72.29%;
 }
 
+/* line 533, ../../TESTIMONIALS/scss/grid.scss */
 .span-7-of-11 {
-	width: 63.05%; 
+  width: 63.05%;
 }
 
+/* line 537, ../../TESTIMONIALS/scss/grid.scss */
 .span-6-of-11 {
-	width: 53.81%; 
+  width: 53.81%;
 }
 
+/* line 541, ../../TESTIMONIALS/scss/grid.scss */
 .span-5-of-11 {
-	width: 44.58%; 
+  width: 44.58%;
 }
 
+/* line 545, ../../TESTIMONIALS/scss/grid.scss */
 .span-4-of-11 {
-	width: 35.34%; 
+  width: 35.34%;
 }
 
+/* line 549, ../../TESTIMONIALS/scss/grid.scss */
 .span-3-of-11 {
-	width: 26.1%;
+  width: 26.1%;
 }
 
+/* line 553, ../../TESTIMONIALS/scss/grid.scss */
 .span-2-of-11 {
-	width: 16.87%; 
+  width: 16.87%;
 }
 
+/* line 557, ../../TESTIMONIALS/scss/grid.scss */
 .span-1-of-11 {
-	width: 7.63%; 
+  width: 7.63%;
 }
-
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
-	.span-11-of-11 {
-		width: 100%; 
-	}
-	.span-10-of-11 {
-		width: 100%; 
-	}
-	.span-9-of-11 {
-		width: 100%; 
-	}
-	.span-8-of-11 {
-		width: 100%; 
-	}
-	.span-7-of-11 {
-		width: 100%; 
-	}
-	.span-6-of-11 {
-		width: 100%; 
-	}
-	.span-5-of-11 {
-		width: 100%; 
-	}
-	.span-4-of-11 {
-		width: 100%; 
-	}
-	.span-3-of-11 {
-		width: 100%; 
-	}
-	.span-2-of-11 {
-		width: 100%; 
-	}
-	.span-1-of-11 {
-		width: 100%; 
-	}
+  /* line 565, ../../TESTIMONIALS/scss/grid.scss */
+  .span-11-of-11 {
+    width: 100%;
+  }
+  /* line 568, ../../TESTIMONIALS/scss/grid.scss */
+  .span-10-of-11 {
+    width: 100%;
+  }
+  /* line 571, ../../TESTIMONIALS/scss/grid.scss */
+  .span-9-of-11 {
+    width: 100%;
+  }
+  /* line 574, ../../TESTIMONIALS/scss/grid.scss */
+  .span-8-of-11 {
+    width: 100%;
+  }
+  /* line 577, ../../TESTIMONIALS/scss/grid.scss */
+  .span-7-of-11 {
+    width: 100%;
+  }
+  /* line 580, ../../TESTIMONIALS/scss/grid.scss */
+  .span-6-of-11 {
+    width: 100%;
+  }
+  /* line 583, ../../TESTIMONIALS/scss/grid.scss */
+  .span-5-of-11 {
+    width: 100%;
+  }
+  /* line 586, ../../TESTIMONIALS/scss/grid.scss */
+  .span-4-of-11 {
+    width: 100%;
+  }
+  /* line 589, ../../TESTIMONIALS/scss/grid.scss */
+  .span-3-of-11 {
+    width: 100%;
+  }
+  /* line 592, ../../TESTIMONIALS/scss/grid.scss */
+  .span-2-of-11 {
+    width: 100%;
+  }
+  /* line 595, ../../TESTIMONIALS/scss/grid.scss */
+  .span-1-of-11 {
+    width: 100%;
+  }
 }
-
 
 /*  GRID OF TWELVE   ============================================================================= */
-
+/* line 603, ../../TESTIMONIALS/scss/grid.scss */
 .span-12-of-12 {
-	width: 100%;
+  width: 100%;
 }
 
+/* line 607, ../../TESTIMONIALS/scss/grid.scss */
 .span-11-of-12 {
-	width: 91.53%;
+  width: 91.53%;
 }
 
+/* line 611, ../../TESTIMONIALS/scss/grid.scss */
 .span-10-of-12 {
-	width: 83.06%;
+  width: 83.06%;
 }
 
+/* line 615, ../../TESTIMONIALS/scss/grid.scss */
 .span-9-of-12 {
-	width: 74.6%;
+  width: 74.6%;
 }
 
+/* line 619, ../../TESTIMONIALS/scss/grid.scss */
 .span-8-of-12 {
-	width: 66.13%;
+  width: 66.13%;
 }
 
+/* line 623, ../../TESTIMONIALS/scss/grid.scss */
 .span-7-of-12 {
-	width: 57.66%; 
+  width: 57.66%;
 }
 
+/* line 627, ../../TESTIMONIALS/scss/grid.scss */
 .span-6-of-12 {
-	width: 49.2%; 
+  width: 49.2%;
 }
 
+/* line 631, ../../TESTIMONIALS/scss/grid.scss */
 .span-5-of-12 {
-	width: 40.73%; 
+  width: 40.73%;
 }
 
+/* line 635, ../../TESTIMONIALS/scss/grid.scss */
 .span-4-of-12 {
-	width: 32.26%; 
+  width: 32.26%;
 }
 
+/* line 639, ../../TESTIMONIALS/scss/grid.scss */
 .span-3-of-12 {
-	width: 23.8%;
+  width: 23.8%;
 }
 
+/* line 643, ../../TESTIMONIALS/scss/grid.scss */
 .span-2-of-12 {
-	width: 15.33%; 
+  width: 15.33%;
 }
 
+/* line 647, ../../TESTIMONIALS/scss/grid.scss */
 .span-1-of-12 {
-	width: 6.86%; 
+  width: 6.86%;
 }
-
 
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
 @media only screen and (max-width: 480px) {
-	.span-12-of-12 {
-		width: 100%; 
-	}
-	.span-11-of-12 {
-		width: 100%; 
-	}
-	.span-10-of-12 {
-		width: 100%; 
-	}
-	.span-9-of-12 {
-		width: 100%; 
-	}
-	.span-8-of-12 {
-		width: 100%; 
-	}
-	.span-7-of-12 {
-		width: 100%; 
-	}
-	.span-6-of-12 {
-		width: 100%; 
-	}
-	.span-5-of-12 {
-		width: 100%; 
-	}
-	.span-4-of-12 {
-		width: 100%; 
-	}
-	.span-3-of-12 {
-		width: 100%; 
-	}
-	.span-2-of-12 {
-		width: 100%; 
-	}
-	.span-1-of-12 {
-		width: 100%; 
-	}
+  /* line 655, ../../TESTIMONIALS/scss/grid.scss */
+  .span-12-of-12 {
+    width: 100%;
+  }
+  /* line 658, ../../TESTIMONIALS/scss/grid.scss */
+  .span-11-of-12 {
+    width: 100%;
+  }
+  /* line 661, ../../TESTIMONIALS/scss/grid.scss */
+  .span-10-of-12 {
+    width: 100%;
+  }
+  /* line 664, ../../TESTIMONIALS/scss/grid.scss */
+  .span-9-of-12 {
+    width: 100%;
+  }
+  /* line 667, ../../TESTIMONIALS/scss/grid.scss */
+  .span-8-of-12 {
+    width: 100%;
+  }
+  /* line 670, ../../TESTIMONIALS/scss/grid.scss */
+  .span-7-of-12 {
+    width: 100%;
+  }
+  /* line 673, ../../TESTIMONIALS/scss/grid.scss */
+  .span-6-of-12 {
+    width: 100%;
+  }
+  /* line 676, ../../TESTIMONIALS/scss/grid.scss */
+  .span-5-of-12 {
+    width: 100%;
+  }
+  /* line 679, ../../TESTIMONIALS/scss/grid.scss */
+  .span-4-of-12 {
+    width: 100%;
+  }
+  /* line 682, ../../TESTIMONIALS/scss/grid.scss */
+  .span-3-of-12 {
+    width: 100%;
+  }
+  /* line 685, ../../TESTIMONIALS/scss/grid.scss */
+  .span-2-of-12 {
+    width: 100%;
+  }
+  /* line 688, ../../TESTIMONIALS/scss/grid.scss */
+  .span-1-of-12 {
+    width: 100%;
+  }
 }
+
+/*# sourceMappingURL=grid.css.map */
